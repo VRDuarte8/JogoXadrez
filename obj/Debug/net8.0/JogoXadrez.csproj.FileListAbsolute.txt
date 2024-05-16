@@ -1,0 +1,14 @@
+D:\VRD\Cursos\Curso C#\JogoXadrez\bin\Debug\net8.0\JogoXadrez.exe
+D:\VRD\Cursos\Curso C#\JogoXadrez\bin\Debug\net8.0\JogoXadrez.deps.json
+D:\VRD\Cursos\Curso C#\JogoXadrez\bin\Debug\net8.0\JogoXadrez.runtimeconfig.json
+D:\VRD\Cursos\Curso C#\JogoXadrez\bin\Debug\net8.0\JogoXadrez.dll
+D:\VRD\Cursos\Curso C#\JogoXadrez\bin\Debug\net8.0\JogoXadrez.pdb
+D:\VRD\Cursos\Curso C#\JogoXadrez\obj\Debug\net8.0\JogoXadrez.GeneratedMSBuildEditorConfig.editorconfig
+D:\VRD\Cursos\Curso C#\JogoXadrez\obj\Debug\net8.0\JogoXadrez.AssemblyInfoInputs.cache
+D:\VRD\Cursos\Curso C#\JogoXadrez\obj\Debug\net8.0\JogoXadrez.AssemblyInfo.cs
+D:\VRD\Cursos\Curso C#\JogoXadrez\obj\Debug\net8.0\JogoXadrez.csproj.CoreCompileInputs.cache
+D:\VRD\Cursos\Curso C#\JogoXadrez\obj\Debug\net8.0\JogoXadrez.dll
+D:\VRD\Cursos\Curso C#\JogoXadrez\obj\Debug\net8.0\refint\JogoXadrez.dll
+D:\VRD\Cursos\Curso C#\JogoXadrez\obj\Debug\net8.0\JogoXadrez.pdb
+D:\VRD\Cursos\Curso C#\JogoXadrez\obj\Debug\net8.0\JogoXadrez.genruntimeconfig.cache
+D:\VRD\Cursos\Curso C#\JogoXadrez\obj\Debug\net8.0\ref\JogoXadrez.dll
