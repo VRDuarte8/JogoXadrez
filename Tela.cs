@@ -5,9 +5,14 @@ class Tela{
         ImprimirPecasCapturadas(partida);
         System.Console.WriteLine();
         System.Console.WriteLine("Turno: " + partida.Turno);
-        System.Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
-        if(partida.Xeque){
-            System.Console.WriteLine("XEQUE!");
+        if(!partida.Terminada){
+            System.Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
+            if(partida.Xeque){
+                System.Console.WriteLine("XEQUE!");
+            }
+        } else {
+            System.Console.WriteLine("XEQUEMATE!");
+            System.Console.WriteLine("Vencedor: " + partida.JogadorAtual);
         }
     }
 
