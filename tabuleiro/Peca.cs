@@ -1,4 +1,4 @@
-class Peca {
+abstract class Peca {
     public Posicao? Posicao { get; set; }
     public Cor Cor { get; protected set; }
     public int QteMovimentos { get; protected set; }
@@ -14,4 +14,6 @@ class Peca {
     public void IncrementarQteMovimentos(){
         QteMovimentos++;
     }
+
+    public abstract bool[,] MovimentosPossiveis();
 }
