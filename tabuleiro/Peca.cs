@@ -15,6 +15,10 @@ abstract class Peca {
         QteMovimentos++;
     }
 
+    public void DecrementarQteMovimentos(){
+        QteMovimentos--;
+    }
+
     public bool ExisteMovimentosPossiveis(){
         bool[,] mat = MovimentosPossiveis();
         for (int i = 0; i < Tab.Linhas; i++)
