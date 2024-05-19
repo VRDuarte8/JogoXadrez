@@ -3,10 +3,7 @@
     while (!partida.Terminada){
         try{
             Console.Clear();
-            Tela.ImprimirTabuleiro(partida.Tab);
-            System.Console.WriteLine();
-            System.Console.WriteLine("Turno: " + partida.Turno);
-            System.Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
+            Tela.ImprimirPartida(partida);
 
             System.Console.Write("Origem: ");
             Posicao origem = Tela.LerPosicaoXadrez().ToPosicao();
