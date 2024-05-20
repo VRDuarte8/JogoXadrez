@@ -1,5 +1,9 @@
 class Peao : Peca {
-    public Peao(Tabuleiro tab, Cor cor) : base(tab, cor){
+
+    private PartidaDeXadrez _partida;
+
+    public Peao(Tabuleiro tab, Cor cor, PartidaDeXadrez partida) : base(tab, cor){
+        _partida = partida;
     }
 
     private bool ExisteInimigo(Posicao pos){
@@ -33,6 +37,17 @@ class Peao : Peca {
             if(Tab.PosicaoValida(pos) && ExisteInimigo(pos)){
                 mat[pos.Linha, pos.Coluna] = true;
             } 
+            //En Passant
+            if(Posicao.Linha == 3){
+                Posicao esquerda = new(Posicao.Linha, Posicao.Coluna - 1);
+                if (Tab.PosicaoValida(esquerda) && ExisteInimigo(esquerda) && Tab.Peca(esquerda) == _partida.VulneravelEnPassant){
+                    mat[esquerda.Linha - 1, esquerda.Coluna] = true;
+                }
+                Posicao direita = new(Posicao.Linha, Posicao.Coluna + 1);
+                if (Tab.PosicaoValida(direita) && ExisteInimigo(direita) && Tab.Peca(direita) == _partida.VulneravelEnPassant){
+                    mat[direita.Linha - 1, direita.Coluna] = true;
+                }
+            }
         }
         else {
                 pos.DefinirValores(Posicao.Linha + 1, Posicao.Coluna);
@@ -52,6 +67,17 @@ class Peao : Peca {
                 if(Tab.PosicaoValida(pos) && ExisteInimigo(pos)){
                     mat[pos.Linha, pos.Coluna] = true;
                 } 
+                //En Passant
+                if(Posicao.Linha == 4){
+                Posicao esquerda = new(Posicao.Linha, Posicao.Coluna - 1);
+                if (Tab.PosicaoValida(esquerda) && ExisteInimigo(esquerda) && Tab.Peca(esquerda) == _partida.VulneravelEnPassant){
+                    mat[esquerda.Linha + 1, esquerda.Coluna] = true;
+                }
+                Posicao direita = new(Posicao.Linha, Posicao.Coluna + 1);
+                if (Tab.PosicaoValida(direita) && ExisteInimigo(direita) && Tab.Peca(direita) == _partida.VulneravelEnPassant){
+                    mat[direita.Linha + 1, direita.Coluna] = true;
+                }
+            }
             }
 
         return mat;

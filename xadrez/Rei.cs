@@ -1,6 +1,6 @@
 class Rei : Peca {
 
-private PartidaDeXadrez _partida;
+    private PartidaDeXadrez _partida;
 
     public Rei(Tabuleiro tab, Cor cor, PartidaDeXadrez partida) : base(tab, cor){
         _partida = partida;
